@@ -1,0 +1,9 @@
+{
+    "sick leave": "5",
+    "casual leave": "8",
+    "privileged leave": "10",
+    "maternity leave": "90",
+    "paternity leave": "15",
+    "emergency leave": "3",
+    "study leave": "20"
+}

@@ -1,0 +1,20 @@
+/* src/components/ChatBotIcon.css */
+.chatbot-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #121016;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chatbot-icon:hover {
+    background-color: #0d0f0d;
+  }
+  
