@@ -65,12 +65,12 @@ class MyHttpRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(json.dumps({'message': bot_response}).encode())
 
     def get_bot_response(self, message):
-        with open('leave_data.json', 'r') as file:
-            leave_data = json.load(file)
+        with open('flower_data.json', 'r') as f:
+            flower_data = json.load(f)
 
-        for leave_type, balance in leave_data.items():
-            if leave_type.lower() in message.lower():
-                return f"You have {balance} days of {leave_type} remaining."
+        for occasion, flower in flower_data.items():
+            if occasion.lower() in message.lower():
+                return f"For a {occasion}, you should buy {flower}."
 
         # If no specific leave type is found, use a language model to generate a response
         return self.generate_model_response(message)
